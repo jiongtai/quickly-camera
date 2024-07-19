@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".activity.vipcenter.VipCenterActivity">
+
+
+
+    <include
+        android:id="@+id/vipcenter_toolbar"
+        layout="@layout/toolbar_vipcenter" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.106">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/guide_indicator_height"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/d10"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.300">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/btn_vipcenter_btn1"
+                        android:layout_width="96dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/btn_vipcenter_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@drawable/btn_question_feedback_textcolor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/vip_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="年会员"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintStart_toStartOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintVertical_bias="0.193" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="¥"-->
+                    <!--                        android:textColor="@color/super_toast_error_background"-->
+                    <!--                        android:textSize="14sp"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn1"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn1"-->
+                    <!--                        app:layout_constraintHorizontal_bias="0.313"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn1"-->
+                    <!--                        app:layout_constraintVertical_bias="0.504" />-->
+
+                    <TextView
+                        android:id="@+id/vip_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="89.9"
+                        android:textColor="@color/super_toast_error_background"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintHorizontal_bias="0.500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintVertical_bias="0.484" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.01/天"
+                        android:textColor="@color/super_light_grey"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintVertical_bias="0.674" />
+
+                    <TextView
+                        android:id="@+id/vip_desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="限时优惠"
+                        android:textColor="@color/super_light_grey"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn1"
+                        app:layout_constraintVertical_bias="0.955" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/btn_vipcenter_btn2"
+                        android:layout_width="96dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/btn_vipcenter_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@drawable/btn_question_feedback_textcolor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/vip_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="永久会员"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintStart_toStartOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintVertical_bias="0.193" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="¥"-->
+                    <!--                        android:textColor="@color/super_toast_error_background"-->
+                    <!--                        android:textSize="14sp"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn2"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn2"-->
+                    <!--                        app:layout_constraintHorizontal_bias="0.407"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn2"-->
+                    <!--                        app:layout_constraintVertical_bias="0.504" />-->
+
+                    <TextView
+                        android:id="@+id/vip_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="@color/super_toast_error_background"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintHorizontal_bias="0.500"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintVertical_bias="0.484" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.01/天"
+                        android:textColor="@color/super_light_grey"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintVertical_bias="0.674" />
+
+                    <TextView
+                        android:id="@+id/vip_desc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="终身使用"
+                        android:textColor="@color/super_light_grey"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn2"
+                        app:layout_constraintVertical_bias="0.955" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RadioButton
+
+                        android:id="@+id/btn_vipcenter_btn3"
+                        android:layout_width="96dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/btn_vipcenter_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@drawable/btn_question_feedback_textcolor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/vip_name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月会员"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintStart_toStartOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintVertical_bias="0.193" />
+
+                    <!--                    <TextView-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:text="¥"-->
+                    <!--                        android:textColor="@color/super_toast_error_background"-->
+                    <!--                        android:textSize="14sp"-->
+                    <!--                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn3"-->
+                    <!--                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn3"-->
+                    <!--                        app:layout_constraintHorizontal_bias="0.413"-->
+                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn3"-->
+                    <!--                        app:layout_constraintVertical_bias="0.504" />-->
+
+                    <TextView
+                        android:id="@+id/vip_price3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="89"
+                        android:textColor="@color/super_toast_error_background"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintHorizontal_bias="0.584"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintVertical_bias="0.484" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.01/天"
+                        android:textColor="@color/super_light_grey"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintVertical_bias="0.674" />
+
+                    <TextView
+                        android:id="@+id/vip_desc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="仅限使用"
+                        android:textColor="@color/super_light_grey"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/btn_vipcenter_btn3"
+                        app:layout_constraintVertical_bias="0.955" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/vipcenter_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d18"
+                    android:text="VIP畅享20+水印"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="@dimen/d18"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="16dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d18"
+                    android:text="VIP尊享超多特权"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d70"></LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginBottom="@dimen/d10"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/vip_bottom_btn"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/vip_background"
+            android:text="立即开通"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+
+</FrameLayout>
+

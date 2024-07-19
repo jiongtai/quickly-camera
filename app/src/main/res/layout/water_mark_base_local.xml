@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/d10"
+    android:layout_marginStart="@dimen/d10"
+    tools:background="@color/black"
+    xmlns:tools="http://schemas.android.com/tools">
+<!-- 地点水印 -->
+
+    <ImageView
+        android:id="@+id/iv_water_local"
+        android:src="@drawable/water_local"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/tv_base_local1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北纬: 11°04'"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/tv_base_local2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="东经: 214°54'"
+        android:textColor="@color/white" />
+
+
+
+
+</LinearLayout>

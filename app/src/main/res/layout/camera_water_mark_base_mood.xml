@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/camera_1_1_background"
+android:orientation="vertical"
+android:padding="@dimen/d10">
+
+<!-- 相机内心情水印 -->
+<LinearLayout
+    android:id="@+id/water_mood"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#5dd7b3">
+
+    <TextView
+        android:id="@+id/tv_base_mood1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记录每天心情"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_base_mood2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022-04-12"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+

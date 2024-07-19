@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+
+    <!--toolbar浅色-->
+    <style name="SuperTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+
+    <!--toolbar深色-->
+    <style name="SuperTheme.AppBarOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SuperTheme.PopupOverlay.Light" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--region Activity样式-->
+    <style name="SuperUI.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--背景色-->
+        <item name="android:colorBackground">@color/white</item>
+
+        <!--主色调，按钮默认填充颜色-->
+        <item name="colorPrimary">@color/primary</item>
+
+        <!-- 次色调，例如floatActionButton背景，SeekBar进度颜色 -->
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorLightWhite">@color/white</item>
+
+        <item name="colorOnSurface">@color/black40</item>
+
+        <!-- 分割线颜色 -->
+        <item name="colorDivider">@color/black183</item>
+
+        <!-- tab bar控件背景 -->
+        <item name="colorTabBar">?android:attr/colorBackground</item>
+
+        <!-- 分割线 -->
+        <item name="android:listDivider">@drawable/shape_divider</item>
+
+        <!-- 状态栏颜色 -->
+        <item name="android:statusBarColor" tools:targetApi="l">?android:attr/colorBackground</item>
+
+        <!--Toolbar背景颜色-->
+        <item name="colorToolbar">@color/white</item>
+
+        <item name="colorSurface">@color/white</item>
+
+        <!--colorSurface点击颜色-->
+        <item name="colorSurfaceClick">@color/black180</item>
+
+        <item name="colorOnTextSecondary">@color/black80</item>
+
+        <!--侧滑背景-->
+        <item name="colorSlideBackground">@color/black183</item>
+    </style>
+
+
+    <!--设置更多图标-->
+    <style name="SuperSettingMore">
+        <item name="android:layout_width">@dimen/d20</item>
+        <item name="android:layout_height">@dimen/d20</item>
+        <item name="android:src">@drawable/arrow_forward</item>
+        <item name="android:layout_marginLeft">@dimen/padding_outer</item>
+        <item name="tint">@color/super_light_grey</item>
+    </style>
+
+</resources>

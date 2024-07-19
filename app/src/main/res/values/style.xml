@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- checkbox圆形 -->
+    <style name="CustomCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_rounded</item> <!-- 使用刚才创建的Drawable -->
+        <!--        <item name="android:textColor">@android:color/transparent</item> &lt;!&ndash; 如果不需要文本，可以设置为透明 &ndash;&gt;-->
+        <item name="android:padding">0dp</item> <!-- 移除默认的内边距 -->
+    </style>
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- 调整外边框的宽度 -->
+        <item name="boxStrokeWidth">10dp</item>
+        <!-- 调整内部EditText与外边框的距离 -->
+        <item name="android:paddingTop">8dp</item> <!-- 增加上部内边距 -->
+        <item name="android:paddingBottom">8dp</item> <!-- 增加下部内边距 -->
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <!--me_btn_buyvip-->
+    <style name="me_btn_buyvip" >
+        <!-- 在这里定义按钮的样式 -->
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:background">@drawable/me_btn_buyvip</item>
+    </style>
+
+    <!--相机底部-->
+    <style name="CustomTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicator">@drawable/camera_indicator_shapre</item>
+        <item name="tabIndicatorGravity">center</item>
+    </style>
+
+
+    <!-- styles.xml -->
+    <style name="DeleteConfirmDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <!-- 可以尝试调整这两个值来改变宽度 -->
+<!--        <item name="android:windowBackground">@null</item> &lt;!&ndash; 设置透明背景 &ndash;&gt;-->
+<!--        <item name="android:windowIsFloating">false</item> &lt;!&ndash; 让对话框扩展到屏幕边缘 &ndash;&gt;-->
+<!--        <item name="android:windowNoTitle">true</item> &lt;!&ndash; 隐藏标题栏 &ndash;&gt;-->
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_sheet_dialog_bg</item>
+    </style>
+
+</resources>

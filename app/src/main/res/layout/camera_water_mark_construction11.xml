@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/camera_1_1_background"
+    tools:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/visible1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/construction1_real_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="现场拍照"
+            android:textSize="20sp"
+            android:textColor="#cbcbcb" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/d5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/visible2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经度："
+                android:textColor="#cbcbcb"
+                android:textSize="9sp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/construction1_real_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="113.342241"
+                android:textColorHint="#cbcbcb"
+                android:enabled="false"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/d5"
+            android:id="@+id/visible3"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间："
+                android:textColor="#cbcbcb"
+                android:textSize="9sp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/construction1_real_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="2020-07-07 15:15:36"
+                android:enabled="false"
+                android:textColorHint="#cbcbcb"
+                android:textSize="9sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

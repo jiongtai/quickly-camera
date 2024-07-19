@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
+
+
+    <ImageView
+        android:id="@+id/me_background_login"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d280"
+        android:scaleType="fitStart"
+        android:src="@drawable/me_background_login"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/me_background_not_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d280"
+        android:scaleType="fitStart"
+        android:src="@drawable/me_backgroud"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/me_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/me_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237">
+
+        <ImageView
+            android:id="@+id/me_card_not_login_background"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_card_not_login_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/me_crown"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:src="@drawable/me_crown"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/me_card_not_login_background"
+            app:layout_constraintEnd_toEndOf="@+id/me_card_not_login_background"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="@+id/me_card_not_login_background"
+            app:layout_constraintTop_toTopOf="@+id/me_card_not_login_background"
+            app:layout_constraintVertical_bias="0.300" />
+
+        <TextView
+            android:id="@+id/me_not_login_textview"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="您当前还未成为尊贵VIP"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/me_card_not_login_background"
+            app:layout_constraintEnd_toEndOf="@+id/me_card_not_login_background"
+            app:layout_constraintStart_toStartOf="@+id/me_card_not_login_background"
+            app:layout_constraintTop_toTopOf="@+id/me_card_not_login_background"
+            app:layout_constraintVertical_bias="0.309" />
+
+        <TextView
+            android:id="@+id/me_not_login_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开通会员，水印拍照修改，无限用"
+            android:textColor="#e7c6bb"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/me_card_not_login_background"
+            app:layout_constraintEnd_toEndOf="@+id/me_card_not_login_background"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/me_card_not_login_background"
+            app:layout_constraintTop_toTopOf="@+id/me_card_not_login_background"
+            app:layout_constraintVertical_bias="0.557" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/me_btn_buyvip"
+            style="@style/me_btn_buyvip"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:text="立即开通"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/me_card_not_login_background"
+            app:layout_constraintEnd_toEndOf="@+id/me_card_not_login_background"
+            app:layout_constraintHorizontal_bias="0.915"
+            app:layout_constraintStart_toStartOf="@+id/me_card_not_login_background"
+            app:layout_constraintTop_toTopOf="@+id/me_not_login_textview"
+            app:layout_constraintVertical_bias="0.486" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d10"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287">
+
+        <ImageView
+            android:id="@+id/me_card_login_background"
+            android:layout_width="334dp"
+            android:layout_height="100dp"
+            android:src="@drawable/me_card_login_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/me_head_login"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/me_head_login"
+            app:layout_constraintStart_toStartOf="@+id/me_card_login_background"
+            app:layout_constraintTop_toTopOf="@+id/me_card_login_background" />
+
+        <TextView
+            android:id="@+id/me_login_textview"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="22222222222"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/me_head_login"
+            app:layout_constraintTop_toTopOf="@+id/me_card_login_background" />
+
+        <TextView
+            android:id="@+id/me_login_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="48dp"
+            android:text="开通会员，水印拍照修改\n无限用"
+            android:textColor="#e7c6bb"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/me_head_login"
+            app:layout_constraintTop_toTopOf="@+id/me_card_login_background" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/me_btn_login_buyvip"
+            style="@style/me_btn_buyvip"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:text="立即开通"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/me_card_login_background"
+            app:layout_constraintTop_toTopOf="@+id/me_card_login_background" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/me_textview_head1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="每日水印打卡\n各种水印，一键打卡\n支持随意修改"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/me_background_not_login" />
+
+    <TextView
+        android:id="@+id/me_textview_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:text="点击登录"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/me_background_not_login" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="v1.0.0"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/me_background_not_login"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/me_head" />
+
+
+    <LinearLayout
+        android:id="@+id/me_linearlayout_item"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/me_fragment_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/me_background_login"
+        app:layout_constraintVertical_bias="0.624">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/d10">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:src="@drawable/me_icon1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_weight="1"
+                android:text="好友分享"
+                android:textSize="22sp" />
+
+            <ImageView
+                style="@style/SuperSettingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/diver1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/black135"
+            app:dividerThickness="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/d10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diver1">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:src="@drawable/me_icon2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_weight="1"
+                android:text="意见反馈"
+                android:textSize="22sp" />
+
+            <ImageView
+                style="@style/SuperSettingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/diver2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/black135"
+            app:dividerThickness="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/d10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diver2">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:src="@drawable/me_icon3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_weight="1"
+                android:text="联系我们"
+                android:textSize="22sp" />
+
+            <ImageView
+                style="@style/SuperSettingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/diver3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/black135"
+            app:dividerThickness="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/d10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diver3">
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:src="@drawable/me_icon4" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_weight="1"
+                android:text="设置"
+                android:textSize="22sp" />
+
+            <ImageView
+                style="@style/SuperSettingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+

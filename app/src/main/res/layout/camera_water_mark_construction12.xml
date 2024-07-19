@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/visible1"
+        android:layout_width="162dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:background="#D0136efc"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/construction1_real_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工程记录"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#D0FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/visible2"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="施工内容："
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/construction1_real_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="建筑楼顶封顶"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:enabled="false"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/visible3"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拍摄时间："
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/construction1_real_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="2022.09.26.10:57"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:textColorHint="@color/black"
+                android:textSize="9sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visible4"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经纬度："
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/construction1_real_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入经纬度"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:enabled="false"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visible5"
+
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天气："
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/construction1_real_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="天气"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:enabled="false"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visible6"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海拔："
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/construction1_real_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="海拔"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:enabled="false"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/visible7"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方位角："
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/construction1_real_tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="方位角"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:enabled="false"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

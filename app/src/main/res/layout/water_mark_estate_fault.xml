@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="110dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:background="@color/black">
+
+    <ImageView
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_gravity="center"
+        android:src="@drawable/water_estate_fault"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

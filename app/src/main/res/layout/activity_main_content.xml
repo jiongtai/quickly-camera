@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/divider_small" />
+
+    <com.angcyo.tablayout.DslTabLayout
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tab_convex_background="?attr/colorTabBar"
+        app:tab_deselect_color="?attr/colorOnSurface"
+        app:tab_draw_badge="true"
+        app:tab_icon_view_id="@id/content"
+        app:tab_indicator_color="?attr/colorOnSurface"
+        app:tab_indicator_height="3dp"
+        app:tab_item_is_equ_width="true"
+        app:tab_select_color="?attr/colorPrimary"
+        app:tab_text_view_id="@id/content"
+        tools:tab_default_index="0">
+        <!--        <TextView-->
+        <!--            android:id="@id/content"-->
+        <!--            style="@style/TabCommonItemStyle"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            android:drawableTop="@drawable/home_recommand"-->
+        <!--            android:text="@string/discovery" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@id/content"-->
+        <!--            style="@style/TabCommonItemStyle"-->
+        <!--            android:layout_gravity="bottom"-->
+        <!--            android:drawableTop="@drawable/home_recommand"-->
+        <!--            android:text="@string/video" />-->
+    </com.angcyo.tablayout.DslTabLayout>
+</LinearLayout>

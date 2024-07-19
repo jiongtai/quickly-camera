@@ -1,0 +1,8 @@
+<!-- res/color/button_text_color_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中状态下的文字颜色 -->
+    <item android:color="#63a3e5" android:state_checked="true"/> <!-- 示例颜色为黑色，您可以按需更改 -->
+
+    <!-- 默认状态和其他状态下的文字颜色 -->
+    <item android:color="#a3a3a3"/> <!-- 示例颜色为灰色，同样可按需更改 -->
+</selector>

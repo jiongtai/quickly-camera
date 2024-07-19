@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutInsideBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@drawable/camera_water_change_background"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <FrameLayout
+        android:layout_marginTop="16dp"
+        android:background="@drawable/camera_water_change_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="@dimen/d12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/camera_update_water" />
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改水印"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/line_title_1_6"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.bayee.cameras.view.SwitchButton
+            android:id="@+id/btn_1_6_1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:buttonColor="@color/primary"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+        </com.bayee.cameras.view.SwitchButton>
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginLeft="54dp"
+            android:layout_gravity="center"
+            android:layout_width="145dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_update_1_6_1"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                android:text="距离生日还有"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/SuperSettingMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/black140"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/line_day_1_6"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.bayee.cameras.view.SwitchButton
+            android:id="@+id/btn_1_6_2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:buttonColor="@color/primary"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+        </com.bayee.cameras.view.SwitchButton>
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="天数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginLeft="54dp"
+            android:layout_gravity="center"
+            android:layout_width="145dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_update_1_6_2"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                android:text="888"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/SuperSettingMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/black140"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/line_time_1_6"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.bayee.cameras.view.SwitchButton
+            android:id="@+id/btn_1_6_3"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:buttonColor="@color/primary"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+        </com.bayee.cameras.view.SwitchButton>
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginLeft="54dp"
+            android:layout_gravity="center"
+            android:layout_width="145dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_update_1_6_3"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                android:text="2022.04.12 10:20:51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/SuperSettingMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/black140"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/line_location_1_6"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.bayee.cameras.view.SwitchButton
+            android:id="@+id/btn_1_6_4"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            app:buttonColor="@color/primary"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+
+        </com.bayee.cameras.view.SwitchButton>
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="地点"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginLeft="54dp"
+            android:layout_gravity="center"
+            android:layout_width="145dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_update_1_6_4"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                android:text="2022.04.12 10:20:51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/SuperSettingMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/black140"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

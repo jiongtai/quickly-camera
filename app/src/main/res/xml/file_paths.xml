@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 确保包含你的主files目录 -->
+    <files-path name="my_files" path="."/>
+
+    <!-- 添加对Pictures子目录的支持 -->
+    <external-path name="external_files" path="Android/data/com.bayee.cameras/files/Pictures"/>
+</paths>

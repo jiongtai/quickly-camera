@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/d10"
+    android:padding="@dimen/d10"
+    tools:background="@color/black">
+
+    <!-- 经纬度水印 -->
+    <TextView
+        android:id="@+id/tv_base_longitude1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北纬: 11°04'"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_base_longitude2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="东经: 214°54'"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_base_longitude3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022-04-12"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_base_longitude4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我在这里"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
